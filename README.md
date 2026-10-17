@@ -12,8 +12,6 @@ This part is adapted, in my own words, from [ponytail](https://github.com/Dietri
 
 ## Install
 
-Replace `k4kd` with the account that hosts this repo.
-
 ```bash
 # Available in every project (user level)
 npx skills add k4kd/build-products-kunal -g
