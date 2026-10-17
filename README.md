@@ -12,17 +12,17 @@ This part is adapted, in my own words, from [ponytail](https://github.com/Dietri
 
 ## Install
 
-Replace `<your-github-username>` with the account that hosts this repo.
+Replace `k4kd` with the account that hosts this repo.
 
 ```bash
 # Available in every project (user level)
-npx skills add <your-github-username>/build-products-kunal -g
+npx skills add k4kd/build-products-kunal -g
 
 # Only for the current project
-npx skills add <your-github-username>/build-products-kunal
+npx skills add k4kd/build-products-kunal
 
 # Target a specific agent
-npx skills add <your-github-username>/build-products-kunal -g -a claude-code
+npx skills add k4kd/build-products-kunal -g -a claude-code
 ```
 
 For Claude Code, a user-level install ends up in `~/.claude/skills/build-products-kunal/`.
