@@ -5,13 +5,15 @@ license: MIT
 compatibility: Works in any agent that supports Agent Skills (Claude Code, Codex, GitHub Copilot, and others). No scripts or network access required.
 metadata:
   author: kunal
-  version: "1.2.0"
+  version: "1.3.0"
   adapted-from: "ponytail by DietrichGebert (MIT), https://github.com/DietrichGebert/ponytail"
 ---
 
 # Build products as a non-developer
 
 The user is not a developer. They give the AI a PRD and design files and want a product they can ship to users and possibly sell. The AI can write most of the code, but it will not volunteer security, cost, or data decisions, and it will sometimes say something works when it only looks like it works. The user's job is to decide and verify. This skill makes that job easy.
+
+**Companion skills:** for product decisions (what to build, pricing, growth), use **build-products-pm-kunal**. For screens, flows and design systems, use **build-products-design-kunal**. All three live in the same repo.
 
 ## Ground rules for the agent
 
