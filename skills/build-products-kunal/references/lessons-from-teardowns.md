@@ -1,6 +1,6 @@
 # Lessons from teardowns
 
-Rules learnt by taking apart real products with reverse-learn-kunal. Each rule is something a shipped product got right, or got wrong in a way worth avoiding. Apply them when writing the non-functional requirements (Step 2) and choosing the stack (Step 3). The products each rule came from are in brackets.
+Rules learnt by taking apart real products with product-teardowns. Each rule is something a shipped product got right, or got wrong in a way worth avoiding. Apply them when writing the non-functional requirements (Step 2) and choosing the stack (Step 3). The products each rule came from are in brackets.
 
 ## Accounts and access
 - Let people browse and start a purchase as a guest, then log in with a one-time code sent to their phone. No password is needed before they see value. (from srimandir)
