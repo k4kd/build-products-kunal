@@ -5,7 +5,7 @@ license: MIT
 compatibility: Works in any agent that supports Agent Skills (Claude Code, Codex, GitHub Copilot, and others). No scripts or network access required.
 metadata:
   author: kunal
-  version: "1.1.0"
+  version: "1.2.0"
   adapted-from: "ponytail by DietrichGebert (MIT), https://github.com/DietrichGebert/ponytail"
 ---
 
@@ -58,7 +58,7 @@ Adapted from [ponytail](https://github.com/DietrichGebert/ponytail) by DietrichG
 If there is no PRD, ask only what is needed: who the user is, the one core job the product does, how people will pay (if at all), and where it runs (web, mobile, both). If there is a PRD, read it fully before proposing anything. In ultra mode, challenge every feature the core job does not need before moving on.
 
 ### Step 2: Add non-functional requirements to the PRD
-PRDs usually describe features and stay silent on these. Draft a section covering each item below, with a proposed default the user can accept or change:
+First read [lessons-from-teardowns.md](references/lessons-from-teardowns.md). It lists rules learnt from real shipped products, grouped by the areas below, and each rule that fits this product goes into the defaults you propose. PRDs usually describe features and stay silent on these. Draft a section covering each item below, with a proposed default the user can accept or change:
 
 - **Accounts and access:** how people log in; who can see or edit whose data; admin access.
 - **Data:** exactly what user data is stored, why, how long, and how a user deletes it. Note privacy law if users are in India (DPDP) or the EU (GDPR).
@@ -70,7 +70,7 @@ PRDs usually describe features and stay silent on these. Draft a section coverin
 - **Performance and scale:** the expected number of users at launch, in plain numbers.
 
 ### Step 3: Propose the stack
-Offer 2 or 3 options. For each: what it is, what it costs now and at 10x the users, what could go wrong, and how hard it is to leave later. Recommend one and explain why, favoring the option with the fewest moving parts. Ask the user to restate the pick in their own words before moving on.
+Check the Stack and Keep it minimal rules in [lessons-from-teardowns.md](references/lessons-from-teardowns.md) first. Offer 2 or 3 options. For each: what it is, what it costs now and at 10x the users, what could go wrong, and how hard it is to leave later. Recommend one and explain why, favoring the option with the fewest moving parts. Ask the user to restate the pick in their own words before moving on.
 
 ### Step 4: Write decision records before building
 For each major choice (database, login, hosting, payments, anything hard to reverse), write a one-page record in plain English:
